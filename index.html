@@ -16,14 +16,15 @@
             margin: auto;
             margin-top: 2%;
             height: 88vh;
-            width: 80vw;
+            width: 72vw;
             /* background-color: yellow; */
             display: grid;
-            grid-template-columns: 100px auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
             grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
             text-align: center;
             align-content: center;
             box-shadow: 1px 1px 10px rgb(255, 255, 255);
+            justify-content: space-between;
         }
         .item{
       
@@ -42,7 +43,8 @@
             grid-row: 1/span 2;
             font-size: 90px;
             background-color: rgb(68, 112, 255);
-        }.box2{
+        }
+        .box2{
             grid-column: 5/span 4;
             grid-row: 1/span 2;
             font-size: 90px;
@@ -133,11 +135,14 @@
             position: relative;
             justify-items: center;
             background-color: green;
+            justify-content: start;
+           
             
         }
         .img1{
             height: 100px;
             width: 100px;
+            
         }
         .box11{
             align-items: center;
@@ -161,6 +166,7 @@
         .box16{
             font-size: 90px;
             background-color: rgb(0, 153, 255);
+            position: relative;
         }
         .box17{
             font-size: 90px;
@@ -171,6 +177,7 @@
             position: ab;
             justify-items: center;
             background-color: rgb(114, 0, 108);
+            position: relative;
         }
         
       .box20{
@@ -197,12 +204,29 @@
       .box22{
         font-size: 90px;
         background-color: red;
+        position: relative;
       }
       .box19{
         background-color: rgb(255, 95, 95);
+        position: relative;
       }
 
-
+      h1{
+        font-size: 20px;
+        position: relative;
+        /* left: 0px; */
+        top: 100%;
+        text-align: left;
+      }
+      .money{
+        position: absolute;
+        left: 0%;
+        top: 80%;
+      }
+      .box5{
+        color: white;
+        background-color: rgb(179, 3, 3);
+      }
 
 
 
@@ -212,31 +236,26 @@
 <body>
     
     <div class="container">
-        <div class="item box1"> <i class="fa-solid fa-envelope"></i></div>
-        <div class="item box2"> <i class="fa-regular fa-calendar-days"></i></div>
-        <div class="item box3"> <i class="fa-brands fa-internet-explorer"></i></div>
-
-
-    
-       
-       
-        <div class="item box5"> box5</div>
-        <div class="item box6"> <i class="fa-solid fa-headphones"></i></div>
-        <div class="item box7"> <img src="./games (2).png" alt=""></div>
+        <div class="item box1"> <i class="fa-solid fa-envelope"></i> <h1>Mail</h1></div>
+        <div class="item box2"> <i class="fa-regular fa-calendar-days"></i> <h1>Calender</h1></div>
+        <div class="item box3"> <i class="fa-brands fa-internet-explorer"></i> <h1>internet Explorer</h1></div>
+        <div class="item box5"><i class="fa-solid fa-play"></i></div>
+        <div class="item box6"> <i class="fa-solid fa-headphones"></i> <h1></h1></div>
+        <div class="item box7"> <img src="./games (2).png" alt=""> </div>
         <div class="item box8"> <i class="fa-solid fa-camera-retro"></i></div>
-        <div class="item box9"><i class="fa-solid fa-trophy"></i></div>
-        <div class="item box10"><img class="img1" src="./graph.png" alt=""></div>
-        <div class="item box11"><img src="./question.png" alt="" class="img1"></div>
-        <div class="item box12"><i class="fa-solid fa-cloud"></i></div>
-        <div class="item box13"><i class="fa-solid fa-user-group"></i></div>
-        <div class="item box15"><i class="fa-brands fa-skype"></i></div>
-        <div class="item box16"><i class="fa-solid fa-sun"></i></div>
-        <div class="item box17"><i class="fa-regular fa-images"></i></div>
-        <div class="item box18"><img class="img1" src="./note (2).png" alt=""></div>
-        <div class="item box19">box19</div>
+        <div class="item box9"><i class="fa-solid fa-trophy"></i> <h1>Sports</h1></div>
+        <div class="item box10"><img class="img1" src="./graph.png" alt=""> <h1 class="money"> Money</h1> </div>
+        <div class="item box11"><img src="./question.png" alt="" class="img1"> <h1 class="money">Help-Tips</h1></div>
+        <div class="item box12"><i class="fa-solid fa-cloud"></i> <h1>One Drive</h1></div>
+        <div class="item box13"><i class="fa-solid fa-user-group"></i> <h1>People</h1></div>
+        <div class="item box15"><i class="fa-brands fa-skype"></i> <h1>Skype</h1></div>
+        <div class="item box16"><i class="fa-solid fa-sun"></i> <h1 class="money">Mail</h1></div>
+        <div class="item box17"><i class="fa-regular fa-images"></i><h1>Mail</h1></div>
+        <div class="item box18"><img class="img1" src="./note (2).png" alt=""><h1 class="money">OneNote</h1></div>
+        <div class="item box19"><h1 class="money">Desktop</h1></div>
         <div class="item box20"><img src="./mypc.png" alt="" height="" width=""></div>
         <div class="item box21"><i class="fa-solid fa-gear"></i></div>
-        <div class="item box22"><i class="fa-solid fa-address-card"></i></div>
+        <div class="item box22"><i class="fa-solid fa-address-card"></i><h1>News</h1></div>
         <div class="item box23"><img src="./folder.png" alt=""> </div>
         <div class="item box24"><img src="./folder.png" alt=""></div>
   
